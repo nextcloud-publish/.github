@@ -12,3 +12,6 @@ This repository contains shared GitHub configurations, workflows, and templates 
 - Default Issue Templates
 
 For more details, check out the respective folders!
+
+## Managing Issue Labels
+Managing default labels for repositories in your organization is explained [here](https://docs.github.com/en/organizations/managing-organization-settings/managing-default-labels-for-repositories-in-your-organization).
