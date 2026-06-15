@@ -18,8 +18,8 @@ assignees: ''
 
 
 # Akzeptanzkriterien
-[ ] 1.  
-[ ] 2.  
+- [ ] 1.  
+- [ ] 2.  
 
 # Offene Fragen
 Frage | Antwort | Wer/Wann
