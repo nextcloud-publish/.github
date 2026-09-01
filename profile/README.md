@@ -7,12 +7,6 @@ Collectives already supports public sharing, but publicly shared content remains
 The publishing process creates a clear separation between internal collaboration and public presentation. Content can be developed and reviewed within a Collective before being published as a static website with reduced metadata and greater control over its presentation and styling.
 
 ### funded by
-<a href="https://www.bmftr.bund.de">
-  <img width="330" alt="BMFTR Logo" src="https://github.com/user-attachments/assets/aca9b68c-b7fe-4482-98a1-85e9945f2fdb" />
-</a>
-
-<br/>
-
 <a href="https://www.prototypefund.de/">
   <img width="330" alt="Prototype Fund Logo" src="https://github.com/user-attachments/assets/11264c01-7cc4-4cdf-97d6-169f08ca415f" />
 </a>
