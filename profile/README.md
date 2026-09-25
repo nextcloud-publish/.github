@@ -8,12 +8,11 @@ The publishing process creates a clear separation between internal collaboration
 
 ### funded by
 <a href="https://www.bmftr.bund.de/">
-  <img width="514" alt="BMFTR Logo" src="https://github.com/user-attachments/assets/d6395eab-5b3e-4ad9-880b-07c4ffacb1ed" />
+  <img width="514" alt="BMFTR Logo" src="https://github.com/user-attachments/assets/98751248-d8cc-405d-9b2d-bd031ac7047d" />
 </a>
 
 <br/>
 
-
 <a href="https://www.prototypefund.de/">
-  <img width="330" alt="Prototype Fund Logo" src="https://github.com/user-attachments/assets/11264c01-7cc4-4cdf-97d6-169f08ca415f" />
+  <img width="330" alt="Prototype Fund Logo" src="https://github.com/user-attachments/assets/ab533ff8-7cff-4428-b834-430857863acd" />
 </a>
