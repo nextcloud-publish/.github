@@ -6,6 +6,13 @@ Collectives already supports public sharing, but publicly shared content remains
 
 The publishing process creates a clear separation between internal collaboration and public presentation. Content can be developed and reviewed within a Collective before being published as a static website with reduced metadata and greater control over its presentation and styling.
 
+Since the project is  microservice architecture is going to be implemented as a microservice architecture, code can be found in multiple repositories:
+
+[Nextcloud Collectives](https://github.com/nextcloud/collectives/blob/main/DEVELOPING.md) – The Nextcloud collectives main repository with the UI part of the feature
+[SSG Library](https://github.com/nextcloud-publish/ssg-library) – The core library, that converts markdown delilvered by Collectives to a static site (HTML)
+[SSG Worker](https://github.com/nextcloud-publish/ssg-worker)
+[Publish API](https://github.com/nextcloud-publish/publish)
+
 ### funded by
 <a href="https://www.bmftr.bund.de/">
   <img width="514" alt="BMFTR Logo" src="https://github.com/user-attachments/assets/98751248-d8cc-405d-9b2d-bd031ac7047d" />
