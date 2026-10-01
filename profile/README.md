@@ -7,6 +7,8 @@ This project provides a dedicated workflow for turning collaboratively managed c
 
 The publishing process creates a clear separation between internal collaboration and public presentation. Content can be developed and reviewed within a Collective before being published as a static website with reduced metadata and greater control over its presentation and styling.
 
+### Technical description
+
 This project provides the publish service which Nextcloud Collectives calls via REST to start building the static websites and place them where a webserver e.g. nginx can serve them. The publish service consists of two parts which interact via a message broker. The publish service receives build jobs via Rest, validates them and then enqueues them in the message broker. The ssg-worker listens on the message queue and when a build arrives, downloads the resources from NC Collective and builds a static website using the ssg-library. After that it moves the previously built static website and notifies Nextcloud Collectives about success/failure.
 
 The publish service can be deployed with a docker compose file offering an easy way via replica sets to spawn as much ssg-workers as needed to supply also lager setups with multiple Nextcloud instances using the same publish service. Isolating the build process into ssg-library with its templates makes building directly inside Nextcloud Collectives an option for small Nextcloud deployments.
