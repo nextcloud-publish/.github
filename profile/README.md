@@ -22,9 +22,9 @@ Since the project is  microservice architecture is going to be implemented as a 
 
 [SSG Library](https://github.com/nextcloud-publish/ssg-library) – The core library, that converts markdown delilvered by Collectives to a static site (HTML)
 
-[Publish API](https://github.com/nextcloud-publish/publish) - Symfony php app providing a rest api receiving build jobs from NC collectives. Main repo of this project providing also docs and docker compose setup which can be used for deployment. ([latest state](https://github.com/nextcloud-publish/publish/pull/35)
+[Publish API](https://github.com/nextcloud-publish/publish) - Symfony php app providing a rest api receiving build jobs from NC collectives. Main repo of this project providing also docs and docker compose setup which can be used for deployment. [latest state](https://github.com/nextcloud-publish/publish/pull/35)
 
-[SSG Worker](https://github.com/nextcloud-publish/ssg-worker) - Symfony php app building static websites using ssg-library ([latest state](https://github.com/nextcloud-publish/ssg-worker/pull/17)
+[SSG Worker](https://github.com/nextcloud-publish/ssg-worker) - Symfony php app building static websites using ssg-library. [latest state](https://github.com/nextcloud-publish/ssg-worker/pull/17)
 
 
 
