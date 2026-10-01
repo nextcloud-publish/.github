@@ -1,10 +1,16 @@
 # Nextcloud Publish
 
-This project adds a lightweight publishing workflow to the [Nextcloud Collectives app](https://github.com/nextcloud/collectives), enabling users to turn collaboratively managed cloud content into static websites and publish them online with a few clicks.
+This project adds a lightweight publishing workflow to the [Nextcloud Collectives app](https://github.com/nextcloud/collectives), enabling users to turn collaboratively managed cloud content from their Collective markdown wikis into static websites and publish them online with a few clicks.
 
-Collectives already supports public sharing, but publicly shared content remains tied to the Nextcloud instance and comes with limitations regarding performance, security, metadata exposure, and styling. This project provides a dedicated workflow for turning collaboratively managed content into lightweight, static websites that can be published independently.
+Collectives already supports public sharing, but publicly shared content remains tied to the Nextcloud instance and comes with limitations regarding performance, security, metadata exposure, and styling.
+This project provides a dedicated workflow for turning collaboratively managed content into lightweight, static websites that can be published independently.
 
 The publishing process creates a clear separation between internal collaboration and public presentation. Content can be developed and reviewed within a Collective before being published as a static website with reduced metadata and greater control over its presentation and styling.
+
+This project provides the publish service which Nextcloud Collectives calls via REST to start building the static websites and place them where a webserver e.g. nginx can serve them. The publish service consists of two parts which interact via a message broker. The publish service receives build jobs via Rest, validates them and then enqueues them in the message broker. The ssg-worker listens on the message queue and when a build arrives download the resources from NC Collective, build static website using the ssg-library, move the build static website and notify Nextcloud Collectives about success/failure.
+
+The publish service can be deployed with a docker compose file offering a easy way via replica sets to spawn as much ssg-workers as needed to supply also lager setups with multiple Nextcloud instances using the same publish service. Isolating the build process into ssg-library with its templates makes building directly inside Nextcloud Collectives an option for small Nextcloud deployments.
+
 
 <br/>
 
@@ -16,9 +22,11 @@ Since the project is  microservice architecture is going to be implemented as a 
 
 [SSG Library](https://github.com/nextcloud-publish/ssg-library) – The core library, that converts markdown delilvered by Collectives to a static site (HTML)
 
-[SSG Worker](https://github.com/nextcloud-publish/ssg-worker)
+[Publish API](https://github.com/nextcloud-publish/publish) - Symfony php app providing a rest api receiving build jobs from NC collectives. Main repo of this project providing also docs and docker compose setup which can be used for deployment. ([latest state](https://github.com/nextcloud-publish/publish/pull/35)
 
-[Publish API](https://github.com/nextcloud-publish/publish)
+[SSG Worker](https://github.com/nextcloud-publish/ssg-worker) - Symfony php app building static websites using ssg-library ([latest state](https://github.com/nextcloud-publish/ssg-worker/pull/17)
+
+
 
 <br/>
 <br/>
