@@ -12,7 +12,7 @@ The publishing process creates a clear separation between internal collaboration
 
 Since the project is  microservice architecture is going to be implemented as a microservice architecture, code can be found in multiple repositories:
 
-[Nextcloud Collectives]([https://github.com/nextcloud/collectives/blob/main/DEVELOPING.md](https://github.com/nextcloud/collectives/pull/2769)) – The Nextcloud collectives main repository with the UI part of the feature. Pull Request for the feature can be found here: https://github.com/nextcloud/collectives/pull/2769
+[Nextcloud Collectives](https://github.com/nextcloud/collectives/pull/2769) – The Nextcloud collectives main repository with the UI part of the feature. The Pull Request for the project's feature can be found here: https://github.com/nextcloud/collectives/pull/2769
 
 [SSG Library](https://github.com/nextcloud-publish/ssg-library) – The core library, that converts markdown delilvered by Collectives to a static site (HTML)
 
